@@ -5,7 +5,9 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 
 # ==================== ТОКЕН ====================
-TOKEN = "8680869681:AAG0DfxEqraxkzC1QAFRc4y6bMn95OKeEwM"
+import os
+
+app = ApplicationBuilder().token(os.getenv("TOKEN")).build()
 
 # ==================== СПИСКИ СЛІВ ДЛЯ ВИДАЛЕННЯ ====================
 
